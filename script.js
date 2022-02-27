@@ -1,11 +1,11 @@
 
 
-let res = document.querySelector('div#res')
+let res = document.getElementById('res')
 let user = document.getElementById('user')
 let d = document.getElementById('reserva')
 let disp = document.getElementById('disp')
 
-d.addEventListener('click', clicar)
+
 
 
 
@@ -20,10 +20,7 @@ function usuario() {
     }
 }
 function clicar() {
-    d.innerHTML = `${user.value}`
-    d.style.background = 'grey'
-    
-         
+    d.innerHTML = `Usuario${user.value}`
 }
 function reserva() {
     disp.innerHTML = `${user.value}`
